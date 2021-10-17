@@ -1,9 +1,9 @@
 language: node_js
-cache: 
+cache:
   directories:
-  - node_modules
-  - ~/.npm
-node_js: 
+    - node_modules
+    - ~/.npm
+node_js:
   - "12"
 git:
   depth: 3
@@ -15,11 +15,12 @@ notifications:
       - salinatomass@gmail.com
     on_success: always
     on_failure: always
-deploy: 
+deploy:
   provider: heroku
   skip_cleanup: true
   keep_history: true
-  api_key: 5ed29a21-2027-49eb-b9a4-90d2cc2133a4
+  api_key:
+    secure: "oof9Hv+0+xtkdGK9XWJ9WJv7GippgSqpZ4TePYcA5Ru/V0nNIvBCh3ImJ17rLihRPCJLQmhl20GBrq6fpfQ9sUh+bs+SnWK2pseELF8JyORtwNJ8k5pprIYJEu/W47Vfv5qAR0Roj7Rvzghv2tZh1NDoHX4eryHrkD2UGlwxBFNttB+gYMdQSSMepPdUa4sPclXjZDLEason5IikiSPNoThZo5f0T5ZpJnX9ExROpR5Ku1I9U8yCXzaBsDVRD+RWUQ0gwHe49pVDlovobWyv8WfxPz3rcO2LCOyYJOqin/jSfd1hrJNAD4gwJBvm9XPuocPEmxNEdT79Iz6CmKeLrVE19f7UsHKpNqnklF6cAkS/ZqF4E1Nk9d/rlMNJ305WrkNET0PQ6LuIbAGm9j2V3ajqfV4uh0rjRJWE7TfWVJ+c+D5N2WxxwSuM/xRSt8Vj6A3Hx8t4NmmyQiUgstY9wlGU7jLe/2GkQdHCKIE+NWDgh5oIoh1ppqM0qHza3MW9etQhQiwIUXN4mmap+ZlMpuxYF4/LtoUrnApycZQr3Uq9SSvhlHn+I+iE/Ks13sBQDmIVE9BACdeQjZYXpsEQ/1lyEXS7rzaMdYHfSodNUnCzSmcWWRd04usNN+BNbzGJRZE23uZu3Egu91amk75BFOeHWS04yMz2qU6vkyR/Fj8="
   app: platzi-store-webpack-api
   on:
     repo: salinatomass/platzi-store-api-webpack
