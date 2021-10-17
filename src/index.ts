@@ -53,7 +53,7 @@ const port = process.env.PORT || 3006;
 app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello TypeScript");
+  res.send("Hello TypeScript!");
 });
 
 app.get("/api/v1", (req: Request, res: Response) => {
