@@ -1,5 +1,6 @@
 import * as express from "express";
 import { Request, Response } from "express";
+import cors = require("cors");
 
 const intialState = {
   cart: [],
@@ -51,6 +52,8 @@ const intialState = {
 
 const app = express();
 const port = process.env.PORT || 3005;
+
+app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello TypeScript");
