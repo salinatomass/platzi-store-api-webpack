@@ -1,0 +1,25 @@
+language: node_js
+cache: 
+  directories:
+  - node_modules
+  - ~/.npm
+node_js: 
+  - "12"
+git:
+  depth: 3
+script:
+  - yarn build
+notifications:
+  email:
+    recipients:
+      - salinatomass@gmail.com
+    on_success: always
+    on_failure: always
+deploy: 
+  provider: heroku
+  skip_cleanup: true
+  keep_history: true
+  api_key: 5ed29a21-2027-49eb-b9a4-90d2cc2133a4
+  app: platzi-store-webpack-api
+  on:
+    repo: salinatomass/platzi-store-api-webpack
